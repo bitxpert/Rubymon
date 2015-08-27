@@ -39,5 +39,9 @@ gem 'jquery-datatables-rails', '~> 3.3.0'
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'rspec-rails', group: [:development, :test]
+group :test do
+	gem "factory_girl_rails"
+	gem "capybara"
+end
 
